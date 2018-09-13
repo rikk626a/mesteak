@@ -1,12 +1,23 @@
-          .grid-container {
-               display: grid;
-               grid-template-columns: auto auto auto;
-               padding: 10px;
-          }
+body {
+     margin: 0, auto;
+     background-color: black;
+     color: antiquewhite;
+}
 
-          .grid-item {
-               ;
-               padding: 20px;
-               font-size: 30px;
-               text-align: center;
-          }
+.grid-container {
+     display: grid;
+     grid-template-columns: repeat(12, auto);
+     background-color: black;
+     grid-template-rows: repeat(12, 100px);
+
+
+}
+
+.grid-item {
+     ;
+     padding: 20px;
+     font-size: 30px;
+     text-align: center;
+     border-style: double;
+     border-color: darkred;
+}
