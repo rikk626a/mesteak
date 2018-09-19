@@ -1,9 +1,8 @@
 body {
      margin: 0, auto;
-     background-color: #ffffff;
-     color: antiquewhite;
      color: #262626;
      font-family: Lemon_milk;
+     background-image: url(/imgs/background_1.png);
 }
 
 @font-face {
@@ -14,48 +13,49 @@ body {
 .grid-container {
      display: grid;
      grid-auto-rows: auto;
-     grid-template-columns: auto auto;
 }
 
 .grid-item {
-     padding: 20px;
+     padding: 20px 10px 50px 0px;
      font-size: 10px;
-     border-style: solid;
-     border-color: darkred;
      height: 100px;
+     text-align: center;
+     background-color: rgba(102, 102, 102, .5);
+}
 
+.grid-item h1 {
+     cursor: pointer;
 }
 
 .grid-item.header {
-     grid-column-end: span 2;
-     background-color: whitesmoke;
-     justify-self: center;
+     grid-column-end: span 1;
      align-self: center;
+     height: auto;
+     background-color: rgba(0, 0, 0, .1);
+}
+
+.grid-item button {}
+
+.grid-item.fill {
+     grid-column-end: span 1;
+     text-align: center;
      height: auto;
 }
 
-.grid-item button {
-     background-color: deeppink;
-}
-
-.grid-item.fill {
-     width: 100px;
-     height: 80px;
-     grid-column-start: 1;
-     grid-column-end: 3;
-
-}
-
 .button {
-     width: 80px;
-     height: 80px;
+     width: 100px;
+     height: 100px;
      border-radius: 50%;
      cursor: pointer;
      border: none;
      padding: 0;
      margin: 0;
+     box-shadow: 0px 0px 60px 0px #000;
+     border: 0.3px solid #000;
 }
 
-.button img {
-     border-radius: 50%;
+/* Smartphones (portrait) ----------- */
+
+@media only screen and (max-width: 320px) {
+     /* Styles */
 }
